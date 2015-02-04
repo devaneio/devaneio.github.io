@@ -1,0 +1,13 @@
+extends ./main.jade
+
+mixin article(title)
+    session#main_content.inner
+    h3= title
+    if block
+        block
+    else
+        p= 'Nada a declarar, por enquanto'
+
+block content        
+    +article('Eu sou alcoólatra!')
+        include:markdown alcoolatra.md

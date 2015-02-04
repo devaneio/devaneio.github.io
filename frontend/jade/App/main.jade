@@ -1,0 +1,15 @@
+doctype html
+html(lang='pt-br')
+    head
+        include head_html.jade 
+    body(ng-app="devaneioApp")
+        header
+            #header_wrap.outer
+            header.inner
+                include header.jade
+        #main_content_wrap.outer(ng-controller="mainController")
+            block content
+        #footer_wrap.outer
+        footer.inner
+            include footer.jade
+    include scripts.jade    
