@@ -311,7 +311,10 @@ Full-Width Styles
 #project_tagline {
   color: #fff;
   font-size: 24px;
+  font-family: 'Indie Flower', cursive;
   font-weight: 300;
+  margin-top: -1em;
+  margin-left: +3em;
   background: none;
   text-shadow: #111 0px 0px 10px;
 }
