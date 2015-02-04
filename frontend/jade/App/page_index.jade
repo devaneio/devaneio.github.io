@@ -1,13 +1,14 @@
 extends ./main.jade
 
 mixin article(title)
-    session#main_content.inner
-    h3= title
-    if block
-        block
-    else
-        p= 'Nada a declarar, por enquanto'
+    article
+        h3= title
+        if block
+            block
+        else
+            p= 'Nada a declarar, por enquanto'
 
-block content        
-    +article('Eu sou alcoólatra!')
-        include:markdown alcoolatra.md
+block content
+    session#main_content.inner
+        +article('A história de Pedro')
+            include:markdown articles/historia-pedro.md
